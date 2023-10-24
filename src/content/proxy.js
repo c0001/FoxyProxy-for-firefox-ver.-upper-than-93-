@@ -252,14 +252,14 @@ export class Proxy {
     if (!activeTabUrlStr) { return; }
     const activeTabUrl = new URL(activeTabUrlStr);
     if (!activeTabUrl) { return; }
-    const pattern = this.getPattern(activeTabUrlStr);
+    const pattern = this.__ehome_getPatternWildCard(activeTabUrlStr);
     if (!pattern) { return; }
 
     const pat = {
       active: true,
       pattern,
       title: activeTabUrl.hostname,
-      type: 'regex',
+      type: 'wildcard',
     };
 
     const pxy = pref.data.find(i => host === `${i.hostname}:${i.port}`);
@@ -292,6 +292,14 @@ export class Proxy {
     if (!['http:', 'https:'].includes(url.protocol)) { return; } // acceptable URLs
 
     return  '^' + url.origin.replace(/\./g, '\.') + '/';
+  }
+
+  static __ehome_getPatternWildCard(str) {
+    const url = new URL(str);
+    if (!['http:', 'https:'].includes(url.protocol)) { return; } // acceptable URLs
+    str=url.hostname.replace(/^w+\./g, '');
+
+    return  '*://*.' + str + '/';
   }
 
   static getHost(str) {
