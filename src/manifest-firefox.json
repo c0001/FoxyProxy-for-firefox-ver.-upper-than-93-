@@ -56,14 +56,28 @@
   ],
 
   "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+W"
+      }
+    },
     "proxyByPatterns": {
-      "description": "__MSG_proxyByPatterns__"
+      "description": "__MSG_proxyByPatterns__",
+      "suggested_key": {
+        "default": "Alt+E"
+      }
     },
     "disable": {
-      "description": "__MSG_disable__"
+      "description": "__MSG_disable__",
+      "suggested_key": {
+        "default": "Alt+S"
+      }
     },
     "setProxy": {
-      "description": "__MSG_setProxy__"
+      "description": "__MSG_setProxy__",
+      "suggested_key": {
+        "default": "Shift+Alt+E"
+      }
     },
     "quickAdd": {
       "description": "__MSG_quickAdd__"
@@ -81,7 +95,7 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "foxyproxy@eric.h.jung",
+      "id": "{a7d5c36e-c37d-4403-8ad9-1629d7a38d30}",
       "strict_min_version": "93.0"
     },
     "gecko_android": {

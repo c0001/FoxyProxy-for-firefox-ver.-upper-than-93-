@@ -1,5 +1,5 @@
 {
-  "extensionName": { "message": "FoxyProxy" },
+  "extensionName": { "message": "FoxyProxy (entropy_ver.)" },
   "extensionDescription": { "message": "Einfach zu bedienendes, fortschrittliches Proxy-Management-Tool für jedermann" },
 
   "proxyByPatterns": { "message": "Proxy by Patterns" },

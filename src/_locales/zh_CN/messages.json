@@ -1,5 +1,5 @@
 {
-  "extensionName": { "message": "FoxyProxy 标准版" },
+  "extensionName": { "message": "FoxyProxy 标准版 (entropy_ver.)" },
   "extensionDescription": { "message": "易于使用，适用于任何人的高级代理管理工具" },
 
   "extensionNameBasic": { "message": "FoxyProxy 基础版" },
